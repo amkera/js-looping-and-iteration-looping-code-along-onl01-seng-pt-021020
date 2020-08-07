@@ -1,12 +1,9 @@
-
-const names = ["Ada", "Brendan", "Ali"];
-const eventName = "birthday"; 
-
-function writeCards(names, eventName) {
-  for (let i = 0; i < names.length; i++) {
-    console.log(`Thank you, ${names[i]} for the wonderful surprise birthday gift!`); 
+function writeCards( namesArray, event ) {
+  let thankYouCards = []
+  for ( let i = 0; i < namesArray.length; i++ ) {
+    thankYouCards.push( `Thank you, ${namesArray[i]}, for the wonderful ${event} gift!` )
   }
-  return names; 
+  return thankYouCards
 }
 
 writeCards(names); 
