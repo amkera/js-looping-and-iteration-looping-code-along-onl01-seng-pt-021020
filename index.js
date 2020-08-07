@@ -7,3 +7,5 @@ function writeCards( namesArray, event ) {
 }
 
 writeCards(namesArray); 
+
+function countDown(number)
